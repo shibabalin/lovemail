@@ -1,52 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
-  <!-- Stamp border -->
-  <rect x="2" y="2" width="116" height="136" rx="4" ry="4" fill="#fff9f0" stroke="#c4a882" stroke-width="2"/>
-  <line x1="2" y1="12" x2="118" y2="12" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <line x1="2" y1="128" x2="118" y2="128" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <line x1="12" y1="2" x2="12" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <line x1="108" y1="2" x2="108" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" width="160" height="190">
+  <defs>
+    <radialGradient id="sky2" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64b5f6"/>
+      <stop offset="100%" stop-color="#1565c0" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#f1f8e9"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Sky -->
-  <rect x="13" y="13" width="94" height="60" rx="2" fill="#bbdefb"/>
-  <!-- Clouds -->
-  <ellipse cx="35" cy="28" rx="12" ry="6" fill="white" opacity="0.8"/>
-  <ellipse cx="45" cy="25" rx="10" ry="5" fill="white" opacity="0.8"/>
-  <ellipse cx="80" cy="32" rx="9" ry="5" fill="white" opacity="0.8"/>
-  <ellipse cx="89" cy="30" rx="8" ry="4" fill="white" opacity="0.8"/>
-  <!-- Sun -->
-  <circle cx="95" cy="25" r="7" fill="#fff176"/>
-  <circle cx="95" cy="25" r="5" fill="#ffee58"/>
+  <!-- Dentelure haut -->
+  <circle cx="8" cy="8" r="5.5" fill="white"/><circle cx="22" cy="4" r="5.5" fill="white"/><circle cx="36" cy="4" r="5.5" fill="white"/><circle cx="50" cy="4" r="5.5" fill="white"/><circle cx="64" cy="4" r="5.5" fill="white"/><circle cx="78" cy="4" r="5.5" fill="white"/><circle cx="92" cy="4" r="5.5" fill="white"/><circle cx="106" cy="4" r="5.5" fill="white"/><circle cx="120" cy="4" r="5.5" fill="white"/><circle cx="134" cy="4" r="5.5" fill="white"/><circle cx="148" cy="4" r="5.5" fill="white"/><circle cx="152" cy="8" r="5.5" fill="white"/>
+  <!-- Dentelure bas -->
+  <circle cx="8" cy="182" r="5.5" fill="white"/><circle cx="22" cy="186" r="5.5" fill="white"/><circle cx="36" cy="186" r="5.5" fill="white"/><circle cx="50" cy="186" r="5.5" fill="white"/><circle cx="64" cy="186" r="5.5" fill="white"/><circle cx="78" cy="186" r="5.5" fill="white"/><circle cx="92" cy="186" r="5.5" fill="white"/><circle cx="106" cy="186" r="5.5" fill="white"/><circle cx="120" cy="186" r="5.5" fill="white"/><circle cx="134" cy="186" r="5.5" fill="white"/><circle cx="148" cy="186" r="5.5" fill="white"/><circle cx="152" cy="182" r="5.5" fill="white"/>
+  <!-- Dentelure gauche -->
+  <circle cx="4" cy="22" r="5.5" fill="white"/><circle cx="4" cy="36" r="5.5" fill="white"/><circle cx="4" cy="50" r="5.5" fill="white"/><circle cx="4" cy="64" r="5.5" fill="white"/><circle cx="4" cy="78" r="5.5" fill="white"/><circle cx="4" cy="92" r="5.5" fill="white"/><circle cx="4" cy="106" r="5.5" fill="white"/><circle cx="4" cy="120" r="5.5" fill="white"/><circle cx="4" cy="134" r="5.5" fill="white"/><circle cx="4" cy="148" r="5.5" fill="white"/><circle cx="4" cy="162" r="5.5" fill="white"/>
+  <!-- Dentelure droite -->
+  <circle cx="156" cy="22" r="5.5" fill="white"/><circle cx="156" cy="36" r="5.5" fill="white"/><circle cx="156" cy="50" r="5.5" fill="white"/><circle cx="156" cy="64" r="5.5" fill="white"/><circle cx="156" cy="78" r="5.5" fill="white"/><circle cx="156" cy="92" r="5.5" fill="white"/><circle cx="156" cy="106" r="5.5" fill="white"/><circle cx="156" cy="120" r="5.5" fill="white"/><circle cx="156" cy="134" r="5.5" fill="white"/><circle cx="156" cy="148" r="5.5" fill="white"/><circle cx="156" cy="162" r="5.5" fill="white"/>
 
-  <!-- Mountains/hills behind -->
-  <polygon points="13,73 35,45 57,73" fill="#81c784"/>
-  <polygon points="40,73 65,38 90,73" fill="#66bb6a"/>
-  <polygon points="70,73 95,50 118,73" fill="#81c784"/>
+  <!-- Corps du timbre -->
+  <rect x="8" y="8" width="144" height="174" rx="3" fill="url(#bg2)"/>
+  <rect x="10" y="10" width="140" height="170" rx="2" fill="none" stroke="#0277bd" stroke-width="2.5"/>
+  <rect x="14" y="14" width="132" height="162" rx="2" fill="none" stroke="#29b6f6" stroke-width="0.8"/>
 
-  <!-- Lake water -->
-  <ellipse cx="60" cy="90" rx="46" ry="22" fill="#64b5f6"/>
-  <!-- Water reflection -->
-  <ellipse cx="60" cy="90" rx="40" ry="16" fill="#90caf9" opacity="0.4"/>
-  <!-- Water ripples -->
-  <path d="M30 88 Q60 84 90 88" stroke="white" stroke-width="0.8" fill="none" opacity="0.5"/>
-  <path d="M35 93 Q60 89 85 93" stroke="white" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <!-- Illustration -->
+  <rect x="15" y="15" width="130" height="130" rx="2" fill="url(#sky2)"/>
 
-  <!-- Swan 1 (left) -->
-  <ellipse cx="42" cy="85" rx="10" ry="5" fill="white"/>
-  <path d="M52 85 Q58 78 54 83" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <circle cx="54" cy="82" r="3" fill="white"/>
-  <ellipse cx="55" cy="81" rx="1.5" ry="1" fill="#ff8f00"/>
-  <!-- Swan 2 (right, facing left) -->
-  <ellipse cx="78" cy="87" rx="10" ry="5" fill="white"/>
-  <path d="M68 87 Q62 80 66 85" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <circle cx="66" cy="84" r="3" fill="white"/>
-  <ellipse cx="65" cy="83" rx="1.5" ry="1" fill="#ff8f00"/>
-  <!-- Heart between swans -->
-  <text x="56" y="82" font-size="9" fill="#e91e63">♥</text>
+  <!-- Soleil -->
+  <circle cx="125" cy="32" r="13" fill="#fff9c4"/>
+  <circle cx="125" cy="32" r="9" fill="#fff176"/>
 
-  <!-- Grass foreground -->
-  <ellipse cx="60" cy="110" rx="47" ry="8" fill="#a5d6a7"/>
+  <!-- Nuages -->
+  <ellipse cx="40" cy="28" rx="18" ry="9" fill="white" opacity="0.9"/>
+  <ellipse cx="54" cy="24" rx="14" ry="8" fill="white" opacity="0.9"/>
+  <ellipse cx="28" cy="26" rx="12" ry="7" fill="white" opacity="0.9"/>
+  <ellipse cx="85" cy="32" rx="12" ry="6" fill="white" opacity="0.7"/>
+  <ellipse cx="95" cy="29" rx="9" ry="5" fill="white" opacity="0.7"/>
 
-  <!-- Label -->
-  <rect x="13" y="113" width="94" height="15" rx="1" fill="#bbdefb"/>
-  <text x="60" y="124" text-anchor="middle" font-family="serif" font-size="6.5" fill="#0d47a1" font-weight="bold">LAC AUX CYGNES</text>
+  <!-- Montagnes -->
+  <polygon points="15,110 45,60 75,110" fill="#81c784"/>
+  <polygon points="40,110 72,55 104,110" fill="#66bb6a"/>
+  <polygon points="75,110 108,65 141,110" fill="#81c784"/>
+  <!-- Neige -->
+  <polygon points="45,60 52,75 38,75" fill="white" opacity="0.8"/>
+  <polygon points="72,55 80,72 64,72" fill="white" opacity="0.8"/>
+  <polygon points="108,65 115,80 101,80" fill="white" opacity="0.8"/>
+
+  <!-- Lac -->
+  <ellipse cx="80" cy="122" rx="60" ry="24" fill="url(#water)"/>
+  <!-- Reflets -->
+  <path d="M35 118 Q80 112 125 118" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M40 124 Q80 118 120 124" stroke="white" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M45 130 Q80 124 115 130" stroke="white" stroke-width="0.6" fill="none" opacity="0.3"/>
+
+  <!-- Cygne gauche -->
+  <ellipse cx="52" cy="116" rx="16" ry="7" fill="white"/>
+  <!-- Cou -->
+  <path d="M65 116 Q72 105 68 112" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Tête -->
+  <circle cx="68" cy="111" r="5" fill="white"/>
+  <!-- Bec -->
+  <ellipse cx="71" cy="110" rx="3" ry="1.5" fill="#ff8f00"/>
+  <!-- Aile -->
+  <path d="M44 112 Q52 106 62 114" stroke="#e0e0e0" stroke-width="2" fill="none"/>
+  <!-- Oeil -->
+  <circle cx="69.5" cy="109.5" r="1" fill="#212121"/>
+
+  <!-- Cygne droit (miroir) -->
+  <ellipse cx="108" cy="118" rx="16" ry="7" fill="white"/>
+  <path d="M95 118 Q88 107 92 114" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="92" cy="113" r="5" fill="white"/>
+  <ellipse cx="89" cy="112" rx="3" ry="1.5" fill="#ff8f00"/>
+  <path d="M116 114 Q108 108 98 116" stroke="#e0e0e0" stroke-width="2" fill="none"/>
+  <circle cx="90.5" cy="111.5" r="1" fill="#212121"/>
+
+  <!-- Coeur entre les cygnes -->
+  <path d="M77 108 Q80 103 83 108 Q87 103 80 113 Q73 103 77 108Z" fill="#e91e63" opacity="0.9"/>
+
+  <!-- Nénuphars -->
+  <ellipse cx="35" cy="132" rx="8" ry="4" fill="#388e3c" opacity="0.7"/>
+  <ellipse cx="125" cy="134" rx="7" ry="3.5" fill="#388e3c" opacity="0.7"/>
+  <circle cx="35" cy="131" r="2.5" fill="#f48fb1"/>
+  <circle cx="125" cy="133" r="2" fill="#f48fb1"/>
+
+  <!-- Bandeau bas -->
+  <rect x="15" y="148" width="130" height="30" rx="2" fill="#0d47a1"/>
+  <text x="80" y="157" text-anchor="middle" font-family="Georgia, serif" font-size="7" fill="#bbdefb" font-weight="bold" letter-spacing="2">LOVEMAIL</text>
+  <text x="80" y="170" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#64b5f6" font-weight="bold">♥ 1er</text>
 </svg>

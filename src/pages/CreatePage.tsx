@@ -42,22 +42,7 @@ export default function CreatePage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Header */}
-      <header className="py-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="font-serif text-4xl text-rose-700 font-semibold tracking-wide">
-            LoveMail
-          </h1>
-          <p className="text-rose-400 font-handwriting text-lg mt-1">
-            des mots qui voyagent jusqu'au cœur
-          </p>
-        </motion.div>
-      </header>
+    <div className="min-h-screen flex flex-col" style={{ background: 'linear-gradient(160deg, #fff5f7 0%, #fdf2f8 40%, #fef9f0 100%)' }}>
 
       <AnimatePresence mode="wait">
         {phase === 'sending' && (
@@ -76,93 +61,155 @@ export default function CreatePage() {
         )}
 
         {phase === 'create' && (
-          <motion.main
-            key="create"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex-1 px-4 py-4 pb-8"
-          >
-            <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Left column — stamp gallery */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-                className="lg:col-span-1 order-2 lg:order-1"
-              >
-                <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-rose-100">
-                  <StampGallery selectedStamp={selectedStamp} onSelect={setSelectedStamp} />
-                </div>
+          <motion.div key="create" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col flex-1">
 
-                {/* Tips */}
-                <div className="mt-4 bg-rose-50 rounded-xl p-3 border border-rose-100">
-                  <p className="text-xs text-rose-500 leading-relaxed">
-                    💡 <strong>Comment ça marche ?</strong><br />
-                    Écrivez votre message, choisissez un timbre, envoyez — vous recevrez un code secret à partager avec votre destinataire.
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Right column — card + send */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="lg:col-span-2 order-1 lg:order-2 space-y-6"
-              >
-                <PostCard
-                  message={message}
-                  senderName={senderName}
-                  selectedStamp={selectedStamp}
-                  onStampDrop={setSelectedStamp}
-                  onMessageChange={setMessage}
-                  onSenderChange={setSenderName}
-                />
-
-                {/* Character count */}
-                <div className="flex justify-between items-center px-1">
-                  <span className="text-xs text-gray-400">{message.length}/300 caractères</span>
-                  {!selectedStamp && (
-                    <span className="text-xs text-amber-500">⚠️ Choisissez un timbre</span>
-                  )}
-                </div>
-
-                {error && (
+            {/* Header premium */}
+            <header className="pt-8 pb-6 text-center relative overflow-hidden">
+              {/* Petits cœurs déco en arrière-plan */}
+              <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
+                {['12%', '25%', '75%', '88%'].map((left, i) => (
                   <motion.div
-                    initial={{ opacity: 0, y: -8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="bg-red-50 border border-red-200 text-red-600 rounded-xl px-4 py-3 text-sm"
-                  >
-                    {error}
-                  </motion.div>
-                )}
+                    key={i}
+                    className="absolute text-rose-200"
+                    style={{ left, top: `${20 + i * 15}%`, fontSize: `${14 + i * 4}px`, opacity: 0.4 }}
+                    animate={{ y: [0, -8, 0], rotate: [0, 10, 0] }}
+                    transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut', delay: i * 0.8 }}
+                  >♥</motion.div>
+                ))}
+              </div>
 
-                {/* Send button */}
-                <motion.button
-                  whileHover={canSend ? { scale: 1.02, y: -2 } : {}}
-                  whileTap={canSend ? { scale: 0.98 } : {}}
-                  onClick={handleSend}
-                  disabled={!canSend || loading}
-                  className={`w-full py-4 rounded-2xl text-white font-semibold text-lg transition-all duration-300 shadow-lg
-                    ${canSend
-                      ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 shadow-rose-200 cursor-pointer'
-                      : 'bg-gray-300 cursor-not-allowed shadow-none'
-                    }
-                  `}
-                >
-                  {loading ? '⏳ Envoi en cours...' : '💌 Envoyer ma lettre'}
-                </motion.button>
+              <motion.div
+                initial={{ opacity: 0, y: -24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+              >
+                {/* Logo enveloppe */}
+                <motion.div
+                  animate={{ rotate: [-2, 2, -2] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                  className="text-5xl mb-3 inline-block"
+                >💌</motion.div>
 
-                {/* Nav to open */}
-                <p className="text-center text-sm text-gray-400">
-                  Vous avez reçu un code ?{' '}
-                  <a href="/lovemail/ouvrir" className="text-rose-500 hover:text-rose-700 underline underline-offset-2 transition-colors">
-                    Ouvrir ma lettre
-                  </a>
+                <h1 className="font-serif font-semibold tracking-wide" style={{ fontSize: '38px', color: '#be185d', letterSpacing: '0.04em' }}>
+                  LoveMail
+                </h1>
+                <p className="font-handwriting mt-1" style={{ fontSize: '17px', color: '#f472b6' }}>
+                  des mots qui voyagent jusqu'au cœur
                 </p>
               </motion.div>
-            </div>
-          </motion.main>
+
+              {/* Lien ouvrir */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="mt-3"
+              >
+                <a
+                  href="/lovemail/ouvrir"
+                  className="inline-flex items-center gap-1.5 text-sm text-rose-400 hover:text-rose-600 transition-colors"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <span>Vous avez reçu un code ?</span>
+                  <span className="underline underline-offset-2 font-medium">Ouvrir ma lettre →</span>
+                </a>
+              </motion.div>
+            </header>
+
+            <main className="flex-1 px-4 pb-10">
+              <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+                {/* Colonne gauche — timbres */}
+                <motion.div
+                  initial={{ opacity: 0, x: -24 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  className="lg:col-span-1 order-2 lg:order-1"
+                >
+                  <div className="rounded-2xl p-5 border" style={{ background: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(8px)', borderColor: 'rgba(251,207,232,0.5)', boxShadow: '0 4px 24px rgba(190,24,93,0.07)' }}>
+                    <StampGallery selectedStamp={selectedStamp} onSelect={setSelectedStamp} />
+                  </div>
+
+                  {/* Astuce */}
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.6 }}
+                    className="mt-4 rounded-xl p-3.5 border"
+                    style={{ background: 'rgba(255,241,242,0.7)', borderColor: 'rgba(251,207,232,0.5)' }}
+                  >
+                    <p className="text-xs leading-relaxed" style={{ color: '#be185d' }}>
+                      💡 Choisissez un timbre, écrivez votre message, puis envoyez — vous recevrez un <strong>code secret</strong> à partager.
+                    </p>
+                  </motion.div>
+                </motion.div>
+
+                {/* Colonne droite — carte + bouton */}
+                <motion.div
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  className="lg:col-span-2 order-1 lg:order-2 space-y-5"
+                >
+                  <PostCard
+                    message={message}
+                    senderName={senderName}
+                    selectedStamp={selectedStamp}
+                    onStampDrop={setSelectedStamp}
+                    onMessageChange={setMessage}
+                    onSenderChange={setSenderName}
+                  />
+
+                  {/* Compteur + avertissement timbre */}
+                  <div className="flex justify-between items-center px-1">
+                    <span className="text-xs" style={{ color: 'rgba(180,80,100,0.5)' }}>{message.length}/300</span>
+                    {!selectedStamp && message.length > 0 && (
+                      <motion.span
+                        initial={{ opacity: 0, x: 8 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        className="text-xs font-medium"
+                        style={{ color: '#f59e0b' }}
+                      >
+                        ⚠️ Choisissez un timbre pour envoyer
+                      </motion.span>
+                    )}
+                  </div>
+
+                  {error && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="rounded-xl px-4 py-3 text-sm border"
+                      style={{ background: '#fff1f2', borderColor: '#fecdd3', color: '#be123c' }}
+                    >
+                      {error}
+                    </motion.div>
+                  )}
+
+                  {/* Bouton envoyer */}
+                  <motion.button
+                    whileHover={canSend ? { scale: 1.02, y: -2 } : {}}
+                    whileTap={canSend ? { scale: 0.98 } : {}}
+                    onClick={handleSend}
+                    disabled={!canSend || loading}
+                    className="w-full py-4 rounded-2xl text-white font-semibold text-lg transition-all duration-300"
+                    style={canSend ? {
+                      background: 'linear-gradient(135deg, #f43f5e 0%, #ec4899 100%)',
+                      boxShadow: '0 8px 32px rgba(244,63,94,0.35), 0 2px 8px rgba(244,63,94,0.2)',
+                      cursor: 'pointer',
+                    } : {
+                      background: '#e5e7eb',
+                      color: '#9ca3af',
+                      cursor: 'not-allowed',
+                      boxShadow: 'none',
+                    }}
+                  >
+                    {loading ? '⏳ Envoi en cours...' : '💌 Envoyer ma lettre'}
+                  </motion.button>
+                </motion.div>
+              </div>
+            </main>
+          </motion.div>
         )}
       </AnimatePresence>
     </div>
