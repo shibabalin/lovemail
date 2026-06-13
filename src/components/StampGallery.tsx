@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { STAMPS } from '../lib/stamps'
 import type { Stamp } from '../types'
@@ -9,16 +9,14 @@ interface Props {
 }
 
 export default function StampGallery({ selectedStamp, onSelect }: Props) {
-  const [dragging, setDragging] = useState<string | null>(null)
   const dragRef = useRef<{ stamp: Stamp | null }>({ stamp: null })
 
   const handleDragStart = (stamp: Stamp) => {
-    setDragging(stamp.id)
     dragRef.current.stamp = stamp
   }
 
   const handleDragEnd = () => {
-    setDragging(null)
+    // drag ended
   }
 
   return (

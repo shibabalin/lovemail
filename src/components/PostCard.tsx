@@ -15,7 +15,7 @@ export default function PostCard({
   message,
   senderName,
   selectedStamp,
-  onStampDrop,
+  onStampDrop: _onStampDrop,
   onMessageChange,
   onSenderChange,
 }: Props) {
