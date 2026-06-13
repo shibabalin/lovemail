@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+  <!-- Stamp border -->
+  <rect x="2" y="2" width="116" height="136" rx="4" ry="4" fill="#fff9f0" stroke="#c4a882" stroke-width="2"/>
+  <line x1="2" y1="12" x2="118" y2="12" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <line x1="2" y1="128" x2="118" y2="128" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <line x1="12" y1="2" x2="12" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <line x1="108" y1="2" x2="108" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <!-- Sky -->
+  <rect x="13" y="13" width="94" height="60" rx="2" fill="#bbdefb"/>
+  <!-- Clouds -->
+  <ellipse cx="35" cy="28" rx="12" ry="6" fill="white" opacity="0.8"/>
+  <ellipse cx="45" cy="25" rx="10" ry="5" fill="white" opacity="0.8"/>
+  <ellipse cx="80" cy="32" rx="9" ry="5" fill="white" opacity="0.8"/>
+  <ellipse cx="89" cy="30" rx="8" ry="4" fill="white" opacity="0.8"/>
+  <!-- Sun -->
+  <circle cx="95" cy="25" r="7" fill="#fff176"/>
+  <circle cx="95" cy="25" r="5" fill="#ffee58"/>
+
+  <!-- Mountains/hills behind -->
+  <polygon points="13,73 35,45 57,73" fill="#81c784"/>
+  <polygon points="40,73 65,38 90,73" fill="#66bb6a"/>
+  <polygon points="70,73 95,50 118,73" fill="#81c784"/>
+
+  <!-- Lake water -->
+  <ellipse cx="60" cy="90" rx="46" ry="22" fill="#64b5f6"/>
+  <!-- Water reflection -->
+  <ellipse cx="60" cy="90" rx="40" ry="16" fill="#90caf9" opacity="0.4"/>
+  <!-- Water ripples -->
+  <path d="M30 88 Q60 84 90 88" stroke="white" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M35 93 Q60 89 85 93" stroke="white" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+  <!-- Swan 1 (left) -->
+  <ellipse cx="42" cy="85" rx="10" ry="5" fill="white"/>
+  <path d="M52 85 Q58 78 54 83" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="54" cy="82" r="3" fill="white"/>
+  <ellipse cx="55" cy="81" rx="1.5" ry="1" fill="#ff8f00"/>
+  <!-- Swan 2 (right, facing left) -->
+  <ellipse cx="78" cy="87" rx="10" ry="5" fill="white"/>
+  <path d="M68 87 Q62 80 66 85" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="66" cy="84" r="3" fill="white"/>
+  <ellipse cx="65" cy="83" rx="1.5" ry="1" fill="#ff8f00"/>
+  <!-- Heart between swans -->
+  <text x="56" y="82" font-size="9" fill="#e91e63">♥</text>
+
+  <!-- Grass foreground -->
+  <ellipse cx="60" cy="110" rx="47" ry="8" fill="#a5d6a7"/>
+
+  <!-- Label -->
+  <rect x="13" y="113" width="94" height="15" rx="1" fill="#bbdefb"/>
+  <text x="60" y="124" text-anchor="middle" font-family="serif" font-size="6.5" fill="#0d47a1" font-weight="bold">LAC AUX CYGNES</text>
+</svg>
