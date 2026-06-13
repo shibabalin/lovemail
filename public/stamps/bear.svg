@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+  <!-- Stamp border -->
+  <rect x="2" y="2" width="116" height="136" rx="4" ry="4" fill="#fff9f0" stroke="#c4a882" stroke-width="2"/>
+  <!-- Perforations top -->
+  <line x1="2" y1="12" x2="118" y2="12" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <!-- Perforations bottom -->
+  <line x1="2" y1="128" x2="118" y2="128" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <!-- Perforations left -->
+  <line x1="12" y1="2" x2="12" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <!-- Perforations right -->
+  <line x1="108" y1="2" x2="108" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <!-- Background scene -->
+  <rect x="13" y="13" width="94" height="100" rx="2" fill="#fce4ec"/>
+  <!-- Grass -->
+  <ellipse cx="60" cy="108" rx="42" ry="10" fill="#a5d6a7"/>
+  <!-- Sky gradient hint -->
+  <rect x="13" y="13" width="94" height="50" rx="2" fill="#e3f2fd"/>
+  <!-- Stars/hearts in sky -->
+  <text x="25" y="35" font-size="8" fill="#f48fb1">♥</text>
+  <text x="90" y="30" font-size="6" fill="#f48fb1">♥</text>
+  <text x="75" y="45" font-size="5" fill="#ef9a9a">♥</text>
+
+  <!-- Bear body -->
+  <ellipse cx="60" cy="85" rx="18" ry="20" fill="#8d6e63"/>
+  <!-- Bear head -->
+  <circle cx="60" cy="62" r="16" fill="#8d6e63"/>
+  <!-- Bear ears -->
+  <circle cx="47" cy="50" r="6" fill="#8d6e63"/>
+  <circle cx="73" cy="50" r="6" fill="#8d6e63"/>
+  <circle cx="47" cy="50" r="3.5" fill="#bcaaa4"/>
+  <circle cx="73" cy="50" r="3.5" fill="#bcaaa4"/>
+  <!-- Bear face -->
+  <ellipse cx="60" cy="66" rx="9" ry="7" fill="#bcaaa4"/>
+  <!-- Eyes -->
+  <circle cx="55" cy="60" r="2.5" fill="#3e2723"/>
+  <circle cx="65" cy="60" r="2.5" fill="#3e2723"/>
+  <circle cx="55.8" cy="59.2" r="0.8" fill="white"/>
+  <circle cx="65.8" cy="59.2" r="0.8" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="60" cy="65" rx="2.5" ry="1.8" fill="#4a148c" opacity="0.6"/>
+  <!-- Smile -->
+  <path d="M56 68 Q60 72 64 68" stroke="#4a148c" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Blush -->
+  <circle cx="51" cy="64" r="3" fill="#f48fb1" opacity="0.5"/>
+  <circle cx="69" cy="64" r="3" fill="#f48fb1" opacity="0.5"/>
+  <!-- Bear holds heart -->
+  <text x="52" y="92" font-size="14" fill="#e91e63">♥</text>
+
+  <!-- Label -->
+  <rect x="13" y="113" width="94" height="15" rx="1" fill="#f8bbd0"/>
+  <text x="60" y="124" text-anchor="middle" font-family="serif" font-size="7" fill="#880e4f" font-weight="bold">OURS AMOUREUX</text>
+</svg>
