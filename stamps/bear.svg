@@ -1,53 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
-  <!-- Stamp border -->
-  <rect x="2" y="2" width="116" height="136" rx="4" ry="4" fill="#fff9f0" stroke="#c4a882" stroke-width="2"/>
-  <!-- Perforations top -->
-  <line x1="2" y1="12" x2="118" y2="12" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <!-- Perforations bottom -->
-  <line x1="2" y1="128" x2="118" y2="128" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <!-- Perforations left -->
-  <line x1="12" y1="2" x2="12" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
-  <!-- Perforations right -->
-  <line x1="108" y1="2" x2="108" y2="138" stroke="#c4a882" stroke-width="0.5" stroke-dasharray="4,3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" width="160" height="190">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#fdebd0"/>
+    </radialGradient>
+    <radialGradient id="sky1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f8bbd0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="0.4"/>
+    </filter>
+  </defs>
 
-  <!-- Background scene -->
-  <rect x="13" y="13" width="94" height="100" rx="2" fill="#fce4ec"/>
-  <!-- Grass -->
-  <ellipse cx="60" cy="108" rx="42" ry="10" fill="#a5d6a7"/>
-  <!-- Sky gradient hint -->
-  <rect x="13" y="13" width="94" height="50" rx="2" fill="#e3f2fd"/>
-  <!-- Stars/hearts in sky -->
-  <text x="25" y="35" font-size="8" fill="#f48fb1">♥</text>
-  <text x="90" y="30" font-size="6" fill="#f48fb1">♥</text>
-  <text x="75" y="45" font-size="5" fill="#ef9a9a">♥</text>
+  <!-- Dentelure — rangée du haut -->
+  <circle cx="8" cy="8" r="5.5" fill="white"/>
+  <circle cx="22" cy="4" r="5.5" fill="white"/>
+  <circle cx="36" cy="4" r="5.5" fill="white"/>
+  <circle cx="50" cy="4" r="5.5" fill="white"/>
+  <circle cx="64" cy="4" r="5.5" fill="white"/>
+  <circle cx="78" cy="4" r="5.5" fill="white"/>
+  <circle cx="92" cy="4" r="5.5" fill="white"/>
+  <circle cx="106" cy="4" r="5.5" fill="white"/>
+  <circle cx="120" cy="4" r="5.5" fill="white"/>
+  <circle cx="134" cy="4" r="5.5" fill="white"/>
+  <circle cx="148" cy="4" r="5.5" fill="white"/>
+  <circle cx="152" cy="8" r="5.5" fill="white"/>
 
-  <!-- Bear body -->
-  <ellipse cx="60" cy="85" rx="18" ry="20" fill="#8d6e63"/>
-  <!-- Bear head -->
-  <circle cx="60" cy="62" r="16" fill="#8d6e63"/>
-  <!-- Bear ears -->
-  <circle cx="47" cy="50" r="6" fill="#8d6e63"/>
-  <circle cx="73" cy="50" r="6" fill="#8d6e63"/>
-  <circle cx="47" cy="50" r="3.5" fill="#bcaaa4"/>
-  <circle cx="73" cy="50" r="3.5" fill="#bcaaa4"/>
-  <!-- Bear face -->
-  <ellipse cx="60" cy="66" rx="9" ry="7" fill="#bcaaa4"/>
-  <!-- Eyes -->
-  <circle cx="55" cy="60" r="2.5" fill="#3e2723"/>
-  <circle cx="65" cy="60" r="2.5" fill="#3e2723"/>
-  <circle cx="55.8" cy="59.2" r="0.8" fill="white"/>
-  <circle cx="65.8" cy="59.2" r="0.8" fill="white"/>
-  <!-- Nose -->
-  <ellipse cx="60" cy="65" rx="2.5" ry="1.8" fill="#4a148c" opacity="0.6"/>
-  <!-- Smile -->
-  <path d="M56 68 Q60 72 64 68" stroke="#4a148c" stroke-width="1" fill="none" opacity="0.6"/>
-  <!-- Blush -->
-  <circle cx="51" cy="64" r="3" fill="#f48fb1" opacity="0.5"/>
-  <circle cx="69" cy="64" r="3" fill="#f48fb1" opacity="0.5"/>
-  <!-- Bear holds heart -->
-  <text x="52" y="92" font-size="14" fill="#e91e63">♥</text>
+  <!-- Dentelure — rangée du bas -->
+  <circle cx="8" cy="182" r="5.5" fill="white"/>
+  <circle cx="22" cy="186" r="5.5" fill="white"/>
+  <circle cx="36" cy="186" r="5.5" fill="white"/>
+  <circle cx="50" cy="186" r="5.5" fill="white"/>
+  <circle cx="64" cy="186" r="5.5" fill="white"/>
+  <circle cx="78" cy="186" r="5.5" fill="white"/>
+  <circle cx="92" cy="186" r="5.5" fill="white"/>
+  <circle cx="106" cy="186" r="5.5" fill="white"/>
+  <circle cx="120" cy="186" r="5.5" fill="white"/>
+  <circle cx="134" cy="186" r="5.5" fill="white"/>
+  <circle cx="148" cy="186" r="5.5" fill="white"/>
+  <circle cx="152" cy="182" r="5.5" fill="white"/>
 
-  <!-- Label -->
-  <rect x="13" y="113" width="94" height="15" rx="1" fill="#f8bbd0"/>
-  <text x="60" y="124" text-anchor="middle" font-family="serif" font-size="7" fill="#880e4f" font-weight="bold">OURS AMOUREUX</text>
+  <!-- Dentelure — côté gauche -->
+  <circle cx="4" cy="22" r="5.5" fill="white"/>
+  <circle cx="4" cy="36" r="5.5" fill="white"/>
+  <circle cx="4" cy="50" r="5.5" fill="white"/>
+  <circle cx="4" cy="64" r="5.5" fill="white"/>
+  <circle cx="4" cy="78" r="5.5" fill="white"/>
+  <circle cx="4" cy="92" r="5.5" fill="white"/>
+  <circle cx="4" cy="106" r="5.5" fill="white"/>
+  <circle cx="4" cy="120" r="5.5" fill="white"/>
+  <circle cx="4" cy="134" r="5.5" fill="white"/>
+  <circle cx="4" cy="148" r="5.5" fill="white"/>
+  <circle cx="4" cy="162" r="5.5" fill="white"/>
+
+  <!-- Dentelure — côté droit -->
+  <circle cx="156" cy="22" r="5.5" fill="white"/>
+  <circle cx="156" cy="36" r="5.5" fill="white"/>
+  <circle cx="156" cy="50" r="5.5" fill="white"/>
+  <circle cx="156" cy="64" r="5.5" fill="white"/>
+  <circle cx="156" cy="78" r="5.5" fill="white"/>
+  <circle cx="156" cy="92" r="5.5" fill="white"/>
+  <circle cx="156" cy="106" r="5.5" fill="white"/>
+  <circle cx="156" cy="120" r="5.5" fill="white"/>
+  <circle cx="156" cy="134" r="5.5" fill="white"/>
+  <circle cx="156" cy="148" r="5.5" fill="white"/>
+  <circle cx="156" cy="162" r="5.5" fill="white"/>
+
+  <!-- Corps du timbre -->
+  <rect x="8" y="8" width="144" height="174" rx="3" fill="url(#bg1)"/>
+
+  <!-- Cadre doré double -->
+  <rect x="10" y="10" width="140" height="170" rx="2" fill="none" stroke="#c8960c" stroke-width="2.5"/>
+  <rect x="14" y="14" width="132" height="162" rx="2" fill="none" stroke="#e8b414" stroke-width="0.8"/>
+
+  <!-- Fond illustration -->
+  <rect x="15" y="15" width="130" height="130" rx="2" fill="url(#sky1)"/>
+
+  <!-- Collines -->
+  <ellipse cx="40" cy="135" rx="38" ry="22" fill="#c8e6c9"/>
+  <ellipse cx="100" cy="138" rx="50" ry="20" fill="#a5d6a7"/>
+  <ellipse cx="130" cy="136" rx="35" ry="18" fill="#c8e6c9"/>
+
+  <!-- Soleil -->
+  <circle cx="118" cy="35" r="14" fill="#ffecb3" opacity="0.9"/>
+  <circle cx="118" cy="35" r="10" fill="#ffe082"/>
+  <!-- Rayons -->
+  <line x1="118" y1="18" x2="118" y2="14" stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="118" y1="52" x2="118" y2="56" stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="101" y1="35" x2="97" y2="35" stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="135" y1="35" x2="139" y2="35" stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="106" y1="23" x2="103" y2="20" stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="130" y1="47" x2="133" y2="50" stroke="#ffd54f" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Nuages -->
+  <ellipse cx="38" cy="34" rx="16" ry="8" fill="white" opacity="0.85"/>
+  <ellipse cx="50" cy="30" rx="12" ry="7" fill="white" opacity="0.85"/>
+  <ellipse cx="28" cy="32" rx="10" ry="6" fill="white" opacity="0.85"/>
+
+  <ellipse cx="75" cy="38" rx="12" ry="6" fill="white" opacity="0.7"/>
+  <ellipse cx="84" cy="35" rx="9" ry="5" fill="white" opacity="0.7"/>
+
+  <!-- Tronc d'arbre gauche -->
+  <rect x="22" y="108" width="6" height="30" rx="2" fill="#795548"/>
+  <ellipse cx="25" cy="105" rx="14" ry="12" fill="#388e3c"/>
+  <ellipse cx="20" cy="112" rx="10" ry="8" fill="#43a047"/>
+  <ellipse cx="30" cy="110" rx="10" ry="8" fill="#2e7d32"/>
+
+  <!-- Tronc d'arbre droit -->
+  <rect x="128" y="108" width="6" height="30" rx="2" fill="#795548"/>
+  <ellipse cx="131" cy="105" rx="14" ry="12" fill="#388e3c"/>
+  <ellipse cx="126" cy="112" rx="10" ry="8" fill="#43a047"/>
+  <ellipse cx="136" cy="110" rx="10" ry="8" fill="#2e7d32"/>
+
+  <!-- Ours corps -->
+  <ellipse cx="80" cy="118" rx="26" ry="28" fill="#6d4c41"/>
+  <!-- Ventre -->
+  <ellipse cx="80" cy="122" rx="16" ry="18" fill="#a1887f"/>
+  <!-- Tête -->
+  <circle cx="80" cy="88" r="24" fill="#6d4c41"/>
+  <!-- Oreilles -->
+  <circle cx="60" cy="70" r="9" fill="#6d4c41"/>
+  <circle cx="100" cy="70" r="9" fill="#6d4c41"/>
+  <circle cx="60" cy="70" r="5.5" fill="#bcaaa4"/>
+  <circle cx="100" cy="70" r="5.5" fill="#bcaaa4"/>
+  <!-- Museau -->
+  <ellipse cx="80" cy="96" rx="13" ry="10" fill="#bcaaa4"/>
+  <!-- Nez -->
+  <ellipse cx="80" cy="91" rx="5" ry="3.5" fill="#37474f"/>
+  <!-- Yeux -->
+  <circle cx="71" cy="83" r="4" fill="#37474f"/>
+  <circle cx="89" cy="83" r="4" fill="#37474f"/>
+  <circle cx="72.2" cy="81.8" r="1.4" fill="white"/>
+  <circle cx="90.2" cy="81.8" r="1.4" fill="white"/>
+  <!-- Sourire -->
+  <path d="M73 99 Q80 105 87 99" stroke="#37474f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Joues roses -->
+  <circle cx="67" cy="93" r="5" fill="#f48fb1" opacity="0.6"/>
+  <circle cx="93" cy="93" r="5" fill="#f48fb1" opacity="0.6"/>
+  <!-- Coeur tenu -->
+  <path d="M76 126 Q80 118 84 126 Q88 118 80 132 Q72 118 76 126Z" fill="#e91e63"/>
+
+  <!-- Cadre texte -->
+  <rect x="15" y="148" width="130" height="30" rx="2" fill="#880e4f"/>
+  <!-- Texte pays -->
+  <text x="80" y="157" text-anchor="middle" font-family="Georgia, serif" font-size="7" fill="#fce4ec" font-weight="bold" letter-spacing="2">LOVEMAIL</text>
+  <!-- Valeur timbre -->
+  <text x="80" y="170" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#f48fb1" font-weight="bold">♥ 1er</text>
 </svg>
