@@ -148,7 +148,7 @@ export default function EnvelopeAnimation({ letter }: Props) {
                 background: 'linear-gradient(155deg, #fffef7 0%, #fef9e7 50%, #fdf6e3 100%)',
                 boxShadow: '0 24px 64px rgba(180,80,80,0.18), 0 4px 16px rgba(0,0,0,0.08)',
                 // Ratio 3/2 maintenu mais hauteur min garantie pour lisibilité
-                minHeight: '260px',
+                minHeight: '340px',
               }}
             >
               {/* Texture papier */}
@@ -174,7 +174,7 @@ export default function EnvelopeAnimation({ letter }: Props) {
                     transition={{ delay: 0.25, duration: 1 }}
                     className="font-handwriting text-gray-700 flex-1 whitespace-pre-wrap"
                     style={{
-                      fontSize: 'clamp(14px, 3.5vw, 18px)',
+                      fontSize: 'clamp(16px, 3.5vw, 20px)',
                       lineHeight: '1.85',
                       paddingLeft: '24px',
                       paddingTop: '8px',
