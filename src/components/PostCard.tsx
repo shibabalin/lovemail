@@ -46,7 +46,7 @@ export default function PostCard({
       <div
         className="relative rounded-2xl overflow-hidden"
         style={{
-          aspectRatio: '3/2',
+          minHeight: 'clamp(220px, 45vw, 340px)',
           background: 'linear-gradient(160deg, #fffef7 0%, #fef9e7 35%, #fefce8 70%, #fdf6e3 100%)',
           boxShadow: '0 2px 0 #e8d5a3, inset 0 0 60px rgba(200,150,50,0.06)',
         }}
@@ -77,7 +77,7 @@ export default function PostCard({
               placeholder="Écrivez votre message ici..."
               maxLength={300}
               className="absolute inset-0 w-full h-full resize-none bg-transparent font-handwriting text-gray-700 focus:outline-none placeholder:text-amber-300/80"
-              style={{ fontSize: '14px', lineHeight: '1.95', paddingTop: '2px' }}
+              style={{ fontSize: 'clamp(13px, 2.8vw, 16px)', lineHeight: '1.95', paddingTop: '2px' }}
             />
           </div>
 
