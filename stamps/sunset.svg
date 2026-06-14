@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
+  <rect width="120" height="150" rx="4" fill="#fff8f0"/>
+  <rect x="3" y="3" width="114" height="144" rx="2" fill="none" stroke="#e07020" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <g fill="#fff8f0" stroke="#f4c" stroke-width="0.5">
+    <circle cx="6" cy="10" r="3.5"/><circle cx="6" cy="20" r="3.5"/><circle cx="6" cy="30" r="3.5"/><circle cx="6" cy="40" r="3.5"/><circle cx="6" cy="50" r="3.5"/><circle cx="6" cy="60" r="3.5"/><circle cx="6" cy="70" r="3.5"/><circle cx="6" cy="80" r="3.5"/><circle cx="6" cy="90" r="3.5"/><circle cx="6" cy="100" r="3.5"/><circle cx="6" cy="110" r="3.5"/><circle cx="6" cy="120" r="3.5"/><circle cx="6" cy="130" r="3.5"/><circle cx="6" cy="140" r="3.5"/>
+    <circle cx="114" cy="10" r="3.5"/><circle cx="114" cy="20" r="3.5"/><circle cx="114" cy="30" r="3.5"/><circle cx="114" cy="40" r="3.5"/><circle cx="114" cy="50" r="3.5"/><circle cx="114" cy="60" r="3.5"/><circle cx="114" cy="70" r="3.5"/><circle cx="114" cy="80" r="3.5"/><circle cx="114" cy="90" r="3.5"/><circle cx="114" cy="100" r="3.5"/><circle cx="114" cy="110" r="3.5"/><circle cx="114" cy="120" r="3.5"/><circle cx="114" cy="130" r="3.5"/><circle cx="114" cy="140" r="3.5"/>
+    <circle cx="20" cy="5" r="3.5"/><circle cx="30" cy="5" r="3.5"/><circle cx="40" cy="5" r="3.5"/><circle cx="50" cy="5" r="3.5"/><circle cx="60" cy="5" r="3.5"/><circle cx="70" cy="5" r="3.5"/><circle cx="80" cy="5" r="3.5"/><circle cx="90" cy="5" r="3.5"/><circle cx="100" cy="5" r="3.5"/>
+    <circle cx="20" cy="145" r="3.5"/><circle cx="30" cy="145" r="3.5"/><circle cx="40" cy="145" r="3.5"/><circle cx="50" cy="145" r="3.5"/><circle cx="60" cy="145" r="3.5"/><circle cx="70" cy="145" r="3.5"/><circle cx="80" cy="145" r="3.5"/><circle cx="90" cy="145" r="3.5"/><circle cx="100" cy="145" r="3.5"/>
+  </g>
+  <defs>
+    <linearGradient id="sunsetsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0533"/>
+      <stop offset="30%" stop-color="#7b1fa2"/>
+      <stop offset="60%" stop-color="#e64a19"/>
+      <stop offset="80%" stop-color="#ff8f00"/>
+      <stop offset="100%" stop-color="#ffd54f"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <!-- Ciel coucher de soleil -->
+  <rect x="10" y="10" width="100" height="80" rx="3" fill="url(#sunsetsky)"/>
+  <!-- Mer -->
+  <rect x="10" y="85" width="100" height="25" rx="0" fill="url(#sea)"/>
+  <!-- Reflets soleil sur mer -->
+  <ellipse cx="60" cy="90" rx="20" ry="3" fill="#ff8f00" opacity="0.4"/>
+  <ellipse cx="60" cy="95" rx="10" ry="2" fill="#ff8f00" opacity="0.3"/>
+  <ellipse cx="60" cy="100" rx="5" ry="1.5" fill="#ff8f00" opacity="0.2"/>
+  <!-- Soleil couchant -->
+  <circle cx="60" cy="86" r="14" fill="#ff8f00" opacity="0.95"/>
+  <circle cx="60" cy="86" r="11" fill="#ffd54f" opacity="0.8"/>
+  <!-- Rayons soleil -->
+  <g stroke="#ff8f00" stroke-width="1.2" opacity="0.5">
+    <line x1="60" y1="66" x2="60" y2="62"/>
+    <line x1="72" y1="70" x2="75" y2="67"/>
+    <line x1="78" y1="80" x2="83" y2="78"/>
+    <line x1="48" y1="70" x2="45" y2="67"/>
+    <line x1="42" y1="80" x2="37" y2="78"/>
+    <line x1="76" y1="92" x2="81" y2="92"/>
+    <line x1="44" y1="92" x2="39" y2="92"/>
+  </g>
+  <!-- Nuages -->
+  <ellipse cx="28" cy="30" rx="12" ry="5" fill="#ff6d00" opacity="0.3"/>
+  <ellipse cx="35" cy="27" rx="8" ry="4" fill="#e91e63" opacity="0.25"/>
+  <ellipse cx="85" cy="35" rx="10" ry="4.5" fill="#ff6d00" opacity="0.3"/>
+  <ellipse cx="93" cy="32" rx="7" ry="3.5" fill="#e91e63" opacity="0.2"/>
+  <ellipse cx="55" cy="22" rx="9" ry="4" fill="#ab47bc" opacity="0.3"/>
+  <!-- Silhouette côtière -->
+  <path d="M10 85 Q20 78 30 82 Q40 85 50 80 Q55 78 60 86 Q65 78 70 80 Q80 85 90 79 Q100 75 110 82 L110 110 L10 110 Z" fill="#0d1b3e" opacity="0.7"/>
+  <!-- Palmier gauche -->
+  <path d="M25 110 Q26 95 28 85" stroke="#1b3a0f" stroke-width="2" fill="none"/>
+  <ellipse cx="28" cy="85" rx="8" ry="4" fill="#2e7d32" transform="rotate(-30,28,85)"/>
+  <ellipse cx="24" cy="83" rx="7" ry="3.5" fill="#388e3c" transform="rotate(20,24,83)"/>
+  <ellipse cx="32" cy="82" rx="7" ry="3.5" fill="#2e7d32" transform="rotate(-50,32,82)"/>
+  <!-- Palmier droit -->
+  <path d="M95 110 Q94 93 92 83" stroke="#1b3a0f" stroke-width="2" fill="none"/>
+  <ellipse cx="92" cy="83" rx="8" ry="4" fill="#2e7d32" transform="rotate(30,92,83)"/>
+  <ellipse cx="96" cy="81" rx="7" ry="3.5" fill="#388e3c" transform="rotate(-20,96,81)"/>
+  <ellipse cx="88" cy="80" rx="7" ry="3.5" fill="#2e7d32" transform="rotate(50,88,80)"/>
+  <!-- Silhouettes couple -->
+  <g fill="#0d1b3e" transform="translate(56,100)">
+    <circle cx="-4" cy="-8" r="2.5"/>
+    <rect x="-6" y="-5" width="5" height="8" rx="1"/>
+    <circle cx="4" cy="-8" r="2.5"/>
+    <rect x="1" y="-5" width="5" height="8" rx="1"/>
+    <!-- Mains -->
+    <line x1="-1" y1="-2" x2="1" y2="-2" stroke="#0d1b3e" stroke-width="1.5"/>
+  </g>
+  <!-- Label -->
+  <rect x="10" y="118" width="100" height="24" rx="3" fill="#e64a19" opacity="0.9"/>
+  <text x="60" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="1">COUCHER DE SOLEIL</text>
+</svg>

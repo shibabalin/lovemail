@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
+  <rect width="120" height="150" rx="4" fill="#fff8e1"/>
+  <rect x="3" y="3" width="114" height="144" rx="2" fill="none" stroke="#f57f17" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <g fill="#fff8e1" stroke="#ffe082" stroke-width="0.5">
+    <circle cx="6" cy="10" r="3.5"/><circle cx="6" cy="20" r="3.5"/><circle cx="6" cy="30" r="3.5"/><circle cx="6" cy="40" r="3.5"/><circle cx="6" cy="50" r="3.5"/><circle cx="6" cy="60" r="3.5"/><circle cx="6" cy="70" r="3.5"/><circle cx="6" cy="80" r="3.5"/><circle cx="6" cy="90" r="3.5"/><circle cx="6" cy="100" r="3.5"/><circle cx="6" cy="110" r="3.5"/><circle cx="6" cy="120" r="3.5"/><circle cx="6" cy="130" r="3.5"/><circle cx="6" cy="140" r="3.5"/>
+    <circle cx="114" cy="10" r="3.5"/><circle cx="114" cy="20" r="3.5"/><circle cx="114" cy="30" r="3.5"/><circle cx="114" cy="40" r="3.5"/><circle cx="114" cy="50" r="3.5"/><circle cx="114" cy="60" r="3.5"/><circle cx="114" cy="70" r="3.5"/><circle cx="114" cy="80" r="3.5"/><circle cx="114" cy="90" r="3.5"/><circle cx="114" cy="100" r="3.5"/><circle cx="114" cy="110" r="3.5"/><circle cx="114" cy="120" r="3.5"/><circle cx="114" cy="130" r="3.5"/><circle cx="114" cy="140" r="3.5"/>
+    <circle cx="20" cy="5" r="3.5"/><circle cx="30" cy="5" r="3.5"/><circle cx="40" cy="5" r="3.5"/><circle cx="50" cy="5" r="3.5"/><circle cx="60" cy="5" r="3.5"/><circle cx="70" cy="5" r="3.5"/><circle cx="80" cy="5" r="3.5"/><circle cx="90" cy="5" r="3.5"/><circle cx="100" cy="5" r="3.5"/>
+    <circle cx="20" cy="145" r="3.5"/><circle cx="30" cy="145" r="3.5"/><circle cx="40" cy="145" r="3.5"/><circle cx="50" cy="145" r="3.5"/><circle cx="60" cy="145" r="3.5"/><circle cx="70" cy="145" r="3.5"/><circle cx="80" cy="145" r="3.5"/><circle cx="90" cy="145" r="3.5"/><circle cx="100" cy="145" r="3.5"/>
+  </g>
+  <defs>
+    <linearGradient id="vsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3f2fd"/>
+      <stop offset="100%" stop-color="#bbdefb"/>
+    </linearGradient>
+    <linearGradient id="vwater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#1976d2"/>
+    </linearGradient>
+  </defs>
+  <!-- Ciel Venise -->
+  <rect x="10" y="10" width="100" height="60" rx="3" fill="url(#vsky)"/>
+  <!-- Eau -->
+  <rect x="10" y="70" width="100" height="40" fill="url(#vwater)"/>
+  <!-- Reflets eau -->
+  <path d="M10 75 Q30 72 50 76 Q70 80 90 75 Q100 73 110 76 L110 110 L10 110 Z" fill="#1976d2" opacity="0.4"/>
+  <!-- Gondoles reflets -->
+  <ellipse cx="45" cy="80" rx="12" ry="2.5" fill="#0d47a1" opacity="0.35"/>
+  <ellipse cx="75" cy="83" rx="10" ry="2" fill="#0d47a1" opacity="0.3"/>
+  <!-- Bâtiments Venise -->
+  <!-- Palais gauche -->
+  <rect x="10" y="38" width="25" height="35" fill="#f5e6c8"/>
+  <rect x="10" y="38" width="25" height="6" fill="#e8d0a0"/>
+  <!-- Fenêtres gothiques -->
+  <path d="M14 46 Q16 43 18 46 L18 53 L14 53 Z" fill="#90caf9" opacity="0.7"/>
+  <path d="M21 46 Q23 43 25 46 L25 53 L21 53 Z" fill="#90caf9" opacity="0.7"/>
+  <path d="M14 56 Q16 53 18 56 L18 62 L14 62 Z" fill="#90caf9" opacity="0.6"/>
+  <path d="M21 56 Q23 53 25 56 L25 62 L21 62 Z" fill="#90caf9" opacity="0.6"/>
+  <!-- Colonne basilique centrale -->
+  <rect x="40" y="25" width="40" height="48" fill="#f5e6c8"/>
+  <rect x="40" y="25" width="40" height="8" fill="#e8d0a0"/>
+  <!-- Dôme central -->
+  <ellipse cx="60" cy="25" rx="15" ry="8" fill="#c9a227" opacity="0.85"/>
+  <ellipse cx="60" cy="22" rx="10" ry="6" fill="#d4aa30" opacity="0.8"/>
+  <ellipse cx="60" cy="20" rx="6" ry="4" fill="#e8c040"/>
+  <!-- Croix dôme -->
+  <line x1="60" y1="14" x2="60" y2="8" stroke="#c9a227" stroke-width="1.5"/>
+  <line x1="56" y1="10" x2="64" y2="10" stroke="#c9a227" stroke-width="1.5"/>
+  <!-- Arches basilique -->
+  <path d="M42 48 Q47 42 52 48 L52 56 L42 56 Z" fill="#90caf9" opacity="0.6"/>
+  <path d="M54 46 Q59 40 64 46 L64 56 L54 56 Z" fill="#90caf9" opacity="0.65"/>
+  <path d="M66 48 Q71 42 76 48 L76 56 L66 56 Z" fill="#90caf9" opacity="0.6"/>
+  <path d="M42 58 Q47 52 52 58 L52 66 L42 66 Z" fill="#90caf9" opacity="0.5"/>
+  <path d="M66 58 Q71 52 76 58 L76 66 L66 66 Z" fill="#90caf9" opacity="0.5"/>
+  <!-- Palais droit -->
+  <rect x="85" y="42" width="25" height="31" fill="#f5e6c8"/>
+  <rect x="85" y="42" width="25" height="6" fill="#e8d0a0"/>
+  <path d="M88 50 Q90 47 92 50 L92 57 L88 57 Z" fill="#90caf9" opacity="0.7"/>
+  <path d="M95 50 Q97 47 99 50 L99 57 L95 57 Z" fill="#90caf9" opacity="0.7"/>
+  <path d="M88 60 Q90 57 92 60 L92 66 L88 66 Z" fill="#90caf9" opacity="0.6"/>
+  <path d="M95 60 Q97 57 99 60 L99 66 L95 66 Z" fill="#90caf9" opacity="0.6"/>
+  <!-- Gondole gauche -->
+  <path d="M28 78 Q40 74 52 77 Q55 77.5 50 79 Q38 80 26 80 Z" fill="#1a1a2e"/>
+  <!-- Proue gondole -->
+  <path d="M50 77 Q55 75 57 78 Q56 80 53 79 Z" fill="#1a1a2e"/>
+  <!-- Gondolier -->
+  <line x1="40" y1="75" x2="38" y2="70" stroke="#5d4037" stroke-width="1.2"/>
+  <circle cx="38" cy="69" r="1.5" fill="#5d4037"/>
+  <!-- Gondole droite -->
+  <path d="M63 81 Q75 77 87 80 Q90 80.5 85 82 Q73 83 61 83 Z" fill="#1a1a2e"/>
+  <path d="M85 80 Q90 78 92 81 Q91 83 88 82 Z" fill="#1a1a2e"/>
+  <line x1="75" y1="78" x2="73" y2="73" stroke="#5d4037" stroke-width="1.2"/>
+  <circle cx="73" cy="72" r="1.5" fill="#5d4037"/>
+  <!-- Label -->
+  <rect x="10" y="118" width="100" height="24" rx="3" fill="#e65100" opacity="0.9"/>
+  <text x="60" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="1">VENISE ÉTERNELLE</text>
+</svg>

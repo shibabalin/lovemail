@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
+  <rect width="120" height="150" rx="4" fill="#eceff1"/>
+  <rect x="3" y="3" width="114" height="144" rx="2" fill="none" stroke="#546e7a" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <g fill="#eceff1" stroke="#b0bec5" stroke-width="0.5">
+    <circle cx="6" cy="10" r="3.5"/><circle cx="6" cy="20" r="3.5"/><circle cx="6" cy="30" r="3.5"/><circle cx="6" cy="40" r="3.5"/><circle cx="6" cy="50" r="3.5"/><circle cx="6" cy="60" r="3.5"/><circle cx="6" cy="70" r="3.5"/><circle cx="6" cy="80" r="3.5"/><circle cx="6" cy="90" r="3.5"/><circle cx="6" cy="100" r="3.5"/><circle cx="6" cy="110" r="3.5"/><circle cx="6" cy="120" r="3.5"/><circle cx="6" cy="130" r="3.5"/><circle cx="6" cy="140" r="3.5"/>
+    <circle cx="114" cy="10" r="3.5"/><circle cx="114" cy="20" r="3.5"/><circle cx="114" cy="30" r="3.5"/><circle cx="114" cy="40" r="3.5"/><circle cx="114" cy="50" r="3.5"/><circle cx="114" cy="60" r="3.5"/><circle cx="114" cy="70" r="3.5"/><circle cx="114" cy="80" r="3.5"/><circle cx="114" cy="90" r="3.5"/><circle cx="114" cy="100" r="3.5"/><circle cx="114" cy="110" r="3.5"/><circle cx="114" cy="120" r="3.5"/><circle cx="114" cy="130" r="3.5"/><circle cx="114" cy="140" r="3.5"/>
+    <circle cx="20" cy="5" r="3.5"/><circle cx="30" cy="5" r="3.5"/><circle cx="40" cy="5" r="3.5"/><circle cx="50" cy="5" r="3.5"/><circle cx="60" cy="5" r="3.5"/><circle cx="70" cy="5" r="3.5"/><circle cx="80" cy="5" r="3.5"/><circle cx="90" cy="5" r="3.5"/><circle cx="100" cy="5" r="3.5"/>
+    <circle cx="20" cy="145" r="3.5"/><circle cx="30" cy="145" r="3.5"/><circle cx="40" cy="145" r="3.5"/><circle cx="50" cy="145" r="3.5"/><circle cx="60" cy="145" r="3.5"/><circle cx="70" cy="145" r="3.5"/><circle cx="80" cy="145" r="3.5"/><circle cx="90" cy="145" r="3.5"/><circle cx="100" cy="145" r="3.5"/>
+  </g>
+  <defs>
+    <linearGradient id="mtnsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a65"/>
+      <stop offset="40%" stop-color="#ffcc80"/>
+      <stop offset="80%" stop-color="#ffe0b2"/>
+      <stop offset="100%" stop-color="#ffd180"/>
+    </linearGradient>
+  </defs>
+  <!-- Ciel lever du soleil -->
+  <rect x="10" y="10" width="100" height="100" rx="3" fill="url(#mtnsky)"/>
+  <!-- Soleil -->
+  <circle cx="60" cy="55" r="12" fill="#ff8f00" opacity="0.85"/>
+  <circle cx="60" cy="55" r="9" fill="#ffd54f" opacity="0.9"/>
+  <circle cx="60" cy="55" r="6" fill="#fff9c4"/>
+  <!-- Halo -->
+  <circle cx="60" cy="55" r="18" fill="none" stroke="#ff8f00" stroke-width="1" opacity="0.3"/>
+  <circle cx="60" cy="55" r="22" fill="none" stroke="#ff8f00" stroke-width="0.5" opacity="0.2"/>
+  <!-- Montagnes arrière-plan (violet) -->
+  <path d="M10,90 L28,48 L46,75 L64,35 L82,62 L100,42 L110,55 L110,110 L10,110 Z" fill="#7986cb" opacity="0.35"/>
+  <!-- Montagnes milieu (bleu-gris) -->
+  <path d="M10,100 L32,60 L50,82 L68,50 L86,72 L100,55 L110,65 L110,110 L10,110 Z" fill="#546e7a" opacity="0.65"/>
+  <!-- Neige sommet milieu -->
+  <polygon points="68,50 62,62 74,62" fill="white" opacity="0.7"/>
+  <polygon points="100,55 95,64 105,64" fill="white" opacity="0.6"/>
+  <polygon points="32,60 27,70 37,70" fill="white" opacity="0.55"/>
+  <!-- Montagne principale au premier plan -->
+  <path d="M10,110 L40,65 L60,88 L75,52 L110,110 Z" fill="#37474f"/>
+  <!-- Neige sommet principal -->
+  <polygon points="75,52 68,68 82,68" fill="white" opacity="0.9"/>
+  <polygon points="75,52 71,60 79,60" fill="white"/>
+  <!-- Forêt base -->
+  <g fill="#1b5e20" opacity="0.8">
+    <polygon points="18,110 14,100 22,100"/>
+    <polygon points="27,110 23,99 31,99"/>
+    <polygon points="36,110 32,101 40,101"/>
+    <polygon points="90,110 86,100 94,100"/>
+    <polygon points="100,110 96,101 104,101"/>
+    <polygon points="108,110 104,102 110,102 110,110"/>
+  </g>
+  <!-- Lac reflet -->
+  <ellipse cx="55" cy="108" rx="22" ry="4" fill="#90caf9" opacity="0.5"/>
+  <!-- Reflets -->
+  <line x1="45" y1="108" x2="65" y2="108" stroke="white" stroke-width="0.5" opacity="0.4"/>
+  <line x1="48" y1="110" x2="62" y2="110" stroke="white" stroke-width="0.4" opacity="0.3"/>
+  <!-- Label -->
+  <rect x="10" y="118" width="100" height="24" rx="3" fill="#37474f" opacity="0.95"/>
+  <text x="60" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="1">CIMES ENNEIGÉES</text>
+</svg>

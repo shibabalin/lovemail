@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
+  <rect width="120" height="150" rx="4" fill="#f0f4ff"/>
+  <rect x="3" y="3" width="114" height="144" rx="2" fill="none" stroke="#4a6fa5" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <g fill="#f0f4ff" stroke="#ccc" stroke-width="0.5">
+    <circle cx="6" cy="10" r="3.5"/><circle cx="6" cy="20" r="3.5"/><circle cx="6" cy="30" r="3.5"/><circle cx="6" cy="40" r="3.5"/><circle cx="6" cy="50" r="3.5"/><circle cx="6" cy="60" r="3.5"/><circle cx="6" cy="70" r="3.5"/><circle cx="6" cy="80" r="3.5"/><circle cx="6" cy="90" r="3.5"/><circle cx="6" cy="100" r="3.5"/><circle cx="6" cy="110" r="3.5"/><circle cx="6" cy="120" r="3.5"/><circle cx="6" cy="130" r="3.5"/><circle cx="6" cy="140" r="3.5"/>
+    <circle cx="114" cy="10" r="3.5"/><circle cx="114" cy="20" r="3.5"/><circle cx="114" cy="30" r="3.5"/><circle cx="114" cy="40" r="3.5"/><circle cx="114" cy="50" r="3.5"/><circle cx="114" cy="60" r="3.5"/><circle cx="114" cy="70" r="3.5"/><circle cx="114" cy="80" r="3.5"/><circle cx="114" cy="90" r="3.5"/><circle cx="114" cy="100" r="3.5"/><circle cx="114" cy="110" r="3.5"/><circle cx="114" cy="120" r="3.5"/><circle cx="114" cy="130" r="3.5"/><circle cx="114" cy="140" r="3.5"/>
+    <circle cx="20" cy="5" r="3.5"/><circle cx="30" cy="5" r="3.5"/><circle cx="40" cy="5" r="3.5"/><circle cx="50" cy="5" r="3.5"/><circle cx="60" cy="5" r="3.5"/><circle cx="70" cy="5" r="3.5"/><circle cx="80" cy="5" r="3.5"/><circle cx="90" cy="5" r="3.5"/><circle cx="100" cy="5" r="3.5"/>
+    <circle cx="20" cy="145" r="3.5"/><circle cx="30" cy="145" r="3.5"/><circle cx="40" cy="145" r="3.5"/><circle cx="50" cy="145" r="3.5"/><circle cx="60" cy="145" r="3.5"/><circle cx="70" cy="145" r="3.5"/><circle cx="80" cy="145" r="3.5"/><circle cx="90" cy="145" r="3.5"/><circle cx="100" cy="145" r="3.5"/>
+  </g>
+  <!-- Ciel nocturne dégradé -->
+  <rect x="10" y="10" width="100" height="100" rx="3" fill="url(#parissky)"/>
+  <defs>
+    <linearGradient id="parissky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b4b"/>
+      <stop offset="100%" stop-color="#1a3a6b"/>
+    </linearGradient>
+  </defs>
+  <!-- Étoiles -->
+  <circle cx="20" cy="18" r="1" fill="white" opacity="0.9"/>
+  <circle cx="35" cy="14" r="0.8" fill="white" opacity="0.7"/>
+  <circle cx="55" cy="16" r="1.2" fill="white"/>
+  <circle cx="75" cy="13" r="0.9" fill="white" opacity="0.8"/>
+  <circle cx="90" cy="19" r="1" fill="white" opacity="0.6"/>
+  <circle cx="100" cy="15" r="0.7" fill="white"/>
+  <circle cx="28" cy="24" r="0.7" fill="white" opacity="0.5"/>
+  <circle cx="48" cy="22" r="0.9" fill="white" opacity="0.7"/>
+  <circle cx="70" cy="20" r="0.8" fill="white"/>
+  <!-- Lune -->
+  <circle cx="95" cy="25" r="7" fill="#ffd700" opacity="0.9"/>
+  <circle cx="97" cy="23" r="5.5" fill="#0d1b4b"/>
+  <!-- Tour Eiffel simplifiée -->
+  <g transform="translate(60,95)" fill="#8a9bc4">
+    <!-- Socle -->
+    <path d="M-22 0 L-16 -12 L16 -12 L22 0 Z" fill="#6b7fa8"/>
+    <!-- Jambes -->
+    <path d="M-22 0 L-8 -40" stroke="#6b7fa8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M22 0 L8 -40" stroke="#6b7fa8" stroke-width="4" stroke-linecap="round"/>
+    <!-- Corps -->
+    <path d="M-8 -40 L-5 -60 L5 -60 L8 -40 Z" fill="#7a8eb8"/>
+    <path d="M-5 -60 L-3 -75 L3 -75 L5 -60 Z" fill="#8a9bc4"/>
+    <!-- Flèche -->
+    <line x1="0" y1="-75" x2="0" y2="-85" stroke="#ffd700" stroke-width="1.5"/>
+    <circle cx="0" cy="-86" r="2" fill="#ffd700"/>
+    <!-- Étages horizontaux -->
+    <line x1="-14" y1="-12" x2="14" y2="-12" stroke="#8a9bc4" stroke-width="2"/>
+    <line x1="-9" y1="-32" x2="9" y2="-32" stroke="#8a9bc4" stroke-width="2"/>
+    <line x1="-6" y1="-50" x2="6" y2="-50" stroke="#8a9bc4" stroke-width="2"/>
+    <!-- Lumière scintillante -->
+    <circle cx="-12" cy="-5" r="1" fill="#ffd700" opacity="0.8"/>
+    <circle cx="0" cy="-5" r="1" fill="#ffd700" opacity="0.8"/>
+    <circle cx="12" cy="-5" r="1" fill="#ffd700" opacity="0.8"/>
+    <circle cx="-6" cy="-28" r="0.8" fill="#ffd700"/>
+    <circle cx="6" cy="-28" r="0.8" fill="#ffd700"/>
+  </g>
+  <!-- Reflets eau Seine -->
+  <ellipse cx="60" cy="108" rx="18" ry="4" fill="#1a4a8a" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="10" y="118" width="100" height="24" rx="3" fill="#1a3a8a" opacity="0.9"/>
+  <text x="60" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="1">PARIS BY NIGHT</text>
+</svg>
