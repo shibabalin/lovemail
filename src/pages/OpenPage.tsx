@@ -7,18 +7,21 @@ import type { Letter } from '../types'
 
 export default function OpenPage() {
   const { code: urlCode } = useParams<{ code?: string }>()
-  const [inputCode, setInputCode] = useState(urlCode ?? '')
+  // Lire aussi le paramètre query ?code=LOVE-XXXXXX
+  const queryCode = new URLSearchParams(window.location.search).get('code') ?? ''
+  const initialCode = urlCode ?? queryCode
+  const [inputCode, setInputCode] = useState(initialCode)
   const [letter, setLetter] = useState<Letter | null>(null)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const [phase, setPhase] = useState<'input' | 'reveal'>('input')
 
-  // Auto-load if code in URL
+  // Auto-load si code présent dans l'URL (path param ou query param)
   useEffect(() => {
-    if (urlCode) {
-      handleOpen(urlCode)
+    if (initialCode) {
+      handleOpen(initialCode)
     }
-  }, [urlCode])
+  }, [])
 
   const handleOpen = async (code?: string) => {
     const target = (code ?? inputCode).toUpperCase().trim()

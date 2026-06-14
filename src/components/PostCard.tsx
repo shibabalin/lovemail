@@ -67,8 +67,8 @@ export default function PostCard({
             maxLength={300}
             className="flex-1 w-full resize-none bg-transparent font-handwriting text-gray-700 focus:outline-none placeholder:text-amber-300/70"
             style={{
-              fontSize: '20px',
-              lineHeight: '2.1',
+              fontSize: '40px',
+              lineHeight: '1.8',
               paddingLeft: '22px',
               minHeight: '320px',
             }}
@@ -83,7 +83,7 @@ export default function PostCard({
               placeholder="Votre prénom..."
               maxLength={30}
               className="w-full bg-transparent font-handwriting text-rose-400 focus:outline-none placeholder:text-rose-200"
-              style={{ fontSize: '18px', paddingLeft: '22px' }}
+              style={{ fontSize: '36px', paddingLeft: '22px' }}
             />
           </div>
         </div>
