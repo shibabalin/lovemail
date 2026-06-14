@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
+  <rect width="120" height="150" rx="4" fill="#0a0e1a"/>
+  <rect x="3" y="3" width="114" height="144" rx="2" fill="none" stroke="#00e5ff" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <g fill="#0a0e1a" stroke="#00e5ff" stroke-width="0.5" opacity="0.6">
+    <circle cx="6" cy="10" r="3.5"/><circle cx="6" cy="20" r="3.5"/><circle cx="6" cy="30" r="3.5"/><circle cx="6" cy="40" r="3.5"/><circle cx="6" cy="50" r="3.5"/><circle cx="6" cy="60" r="3.5"/><circle cx="6" cy="70" r="3.5"/><circle cx="6" cy="80" r="3.5"/><circle cx="6" cy="90" r="3.5"/><circle cx="6" cy="100" r="3.5"/><circle cx="6" cy="110" r="3.5"/><circle cx="6" cy="120" r="3.5"/><circle cx="6" cy="130" r="3.5"/><circle cx="6" cy="140" r="3.5"/>
+    <circle cx="114" cy="10" r="3.5"/><circle cx="114" cy="20" r="3.5"/><circle cx="114" cy="30" r="3.5"/><circle cx="114" cy="40" r="3.5"/><circle cx="114" cy="50" r="3.5"/><circle cx="114" cy="60" r="3.5"/><circle cx="114" cy="70" r="3.5"/><circle cx="114" cy="80" r="3.5"/><circle cx="114" cy="90" r="3.5"/><circle cx="114" cy="100" r="3.5"/><circle cx="114" cy="110" r="3.5"/><circle cx="114" cy="120" r="3.5"/><circle cx="114" cy="130" r="3.5"/><circle cx="114" cy="140" r="3.5"/>
+    <circle cx="20" cy="5" r="3.5"/><circle cx="30" cy="5" r="3.5"/><circle cx="40" cy="5" r="3.5"/><circle cx="50" cy="5" r="3.5"/><circle cx="60" cy="5" r="3.5"/><circle cx="70" cy="5" r="3.5"/><circle cx="80" cy="5" r="3.5"/><circle cx="90" cy="5" r="3.5"/><circle cx="100" cy="5" r="3.5"/>
+    <circle cx="20" cy="145" r="3.5"/><circle cx="30" cy="145" r="3.5"/><circle cx="40" cy="145" r="3.5"/><circle cx="50" cy="145" r="3.5"/><circle cx="60" cy="145" r="3.5"/><circle cx="70" cy="145" r="3.5"/><circle cx="80" cy="145" r="3.5"/><circle cx="90" cy="145" r="3.5"/><circle cx="100" cy="145" r="3.5"/>
+  </g>
+  <rect x="10" y="10" width="100" height="100" rx="3" fill="#060912"/>
+  <!-- Aurore boréale - rubans colorés -->
+  <path d="M10,45 Q30,25 50,35 Q70,45 90,30 Q105,20 110,28 L110,55 Q95,48 75,60 Q55,72 35,58 Q18,46 10,55 Z" fill="#00e5ff" opacity="0.18"/>
+  <path d="M10,38 Q25,18 48,28 Q68,38 88,22 Q102,12 110,20 L110,38 Q100,30 82,42 Q60,56 38,44 Q20,34 10,42 Z" fill="#69f0ae" opacity="0.22"/>
+  <path d="M10,55 Q28,40 52,50 Q72,60 92,44 Q108,32 110,40 L110,62 Q98,55 78,67 Q56,80 34,66 Q16,54 10,62 Z" fill="#e040fb" opacity="0.12"/>
+  <path d="M10,30 Q22,12 45,22 Q65,32 85,16 Q100,5 110,12 L110,28 Q98,20 78,34 Q56,48 34,36 Q16,25 10,32 Z" fill="#00e5ff" opacity="0.1"/>
+  <!-- Étoiles -->
+  <circle cx="20" cy="15" r="1" fill="white" opacity="0.9"/>
+  <circle cx="35" cy="12" r="0.8" fill="white" opacity="0.8"/>
+  <circle cx="52" cy="18" r="1.1" fill="white"/>
+  <circle cx="68" cy="14" r="0.7" fill="white" opacity="0.9"/>
+  <circle cx="80" cy="10" r="1" fill="white" opacity="0.7"/>
+  <circle cx="95" cy="16" r="0.9" fill="white"/>
+  <circle cx="25" cy="22" r="0.6" fill="white" opacity="0.6"/>
+  <circle cx="45" cy="25" r="0.8" fill="white" opacity="0.7"/>
+  <circle cx="72" cy="20" r="0.7" fill="white" opacity="0.8"/>
+  <circle cx="98" cy="25" r="0.5" fill="white" opacity="0.6"/>
+  <!-- Étoile brillante -->
+  <g transform="translate(85,20)">
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <line x1="-2.8" y1="-2.8" x2="2.8" y2="2.8" stroke="white" stroke-width="0.8" opacity="0.6"/>
+    <line x1="2.8" y1="-2.8" x2="-2.8" y2="2.8" stroke="white" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="0" cy="0" r="1.5" fill="white"/>
+  </g>
+  <!-- Paysage enneigé -->
+  <path d="M10 95 L10 110 L110 110 L110 95 Q95 88 82 93 Q70 98 55 90 Q40 82 25 92 Z" fill="#1a2744"/>
+  <!-- Sapins -->
+  <polygon points="30,92 24,110 36,110" fill="#0d3320"/>
+  <polygon points="30,85 25,95 35,95" fill="#0f4a2a"/>
+  <polygon points="30,80 26,88 34,88" fill="#1a6b3c"/>
+  <polygon points="50,95 44,110 56,110" fill="#0d3320"/>
+  <polygon points="50,88 45,97 55,97" fill="#0f4a2a"/>
+  <polygon points="50,83 46,91 54,91" fill="#1a6b3c"/>
+  <polygon points="82,93 76,110 88,110" fill="#0d3320"/>
+  <polygon points="82,86 77,95 87,95" fill="#0f4a2a"/>
+  <polygon points="82,81 78,89 86,89" fill="#1a6b3c"/>
+  <!-- Neige sur sapins -->
+  <ellipse cx="30" cy="80" rx="4" ry="2" fill="white" opacity="0.7"/>
+  <ellipse cx="50" cy="83" rx="4" ry="2" fill="white" opacity="0.6"/>
+  <ellipse cx="82" cy="81" rx="4" ry="2" fill="white" opacity="0.7"/>
+  <!-- Neige sol -->
+  <ellipse cx="60" cy="110" rx="50" ry="3" fill="white" opacity="0.15"/>
+  <!-- Label -->
+  <rect x="10" y="118" width="100" height="24" rx="3" fill="#0d3380" opacity="0.95"/>
+  <text x="60" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#00e5ff" font-weight="bold" letter-spacing="1">AURORE BORÉALE</text>
+</svg>

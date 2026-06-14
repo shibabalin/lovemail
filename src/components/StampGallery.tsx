@@ -29,7 +29,7 @@ export default function StampGallery({ selectedStamp, onSelect }: Props) {
         <div className="h-px flex-1" style={{ background: 'linear-gradient(to left, transparent, rgba(190,24,93,0.2))' }} />
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-2.5 max-h-96 overflow-y-auto pr-1" style={{ scrollbarWidth: 'thin', scrollbarColor: 'rgba(190,24,93,0.3) transparent' }}>
         {STAMPS.map((stamp) => {
           const isSelected = selectedStamp?.id === stamp.id
           return (

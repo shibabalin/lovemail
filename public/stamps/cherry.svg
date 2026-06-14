@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150">
+  <rect width="120" height="150" rx="4" fill="#fff0f5"/>
+  <rect x="3" y="3" width="114" height="144" rx="2" fill="none" stroke="#d4a0b0" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <g fill="#fff0f5" stroke="#ecc" stroke-width="0.5">
+    <circle cx="6" cy="10" r="3.5"/><circle cx="6" cy="20" r="3.5"/><circle cx="6" cy="30" r="3.5"/><circle cx="6" cy="40" r="3.5"/><circle cx="6" cy="50" r="3.5"/><circle cx="6" cy="60" r="3.5"/><circle cx="6" cy="70" r="3.5"/><circle cx="6" cy="80" r="3.5"/><circle cx="6" cy="90" r="3.5"/><circle cx="6" cy="100" r="3.5"/><circle cx="6" cy="110" r="3.5"/><circle cx="6" cy="120" r="3.5"/><circle cx="6" cy="130" r="3.5"/><circle cx="6" cy="140" r="3.5"/>
+    <circle cx="114" cy="10" r="3.5"/><circle cx="114" cy="20" r="3.5"/><circle cx="114" cy="30" r="3.5"/><circle cx="114" cy="40" r="3.5"/><circle cx="114" cy="50" r="3.5"/><circle cx="114" cy="60" r="3.5"/><circle cx="114" cy="70" r="3.5"/><circle cx="114" cy="80" r="3.5"/><circle cx="114" cy="90" r="3.5"/><circle cx="114" cy="100" r="3.5"/><circle cx="114" cy="110" r="3.5"/><circle cx="114" cy="120" r="3.5"/><circle cx="114" cy="130" r="3.5"/><circle cx="114" cy="140" r="3.5"/>
+    <circle cx="20" cy="5" r="3.5"/><circle cx="30" cy="5" r="3.5"/><circle cx="40" cy="5" r="3.5"/><circle cx="50" cy="5" r="3.5"/><circle cx="60" cy="5" r="3.5"/><circle cx="70" cy="5" r="3.5"/><circle cx="80" cy="5" r="3.5"/><circle cx="90" cy="5" r="3.5"/><circle cx="100" cy="5" r="3.5"/>
+    <circle cx="20" cy="145" r="3.5"/><circle cx="30" cy="145" r="3.5"/><circle cx="40" cy="145" r="3.5"/><circle cx="50" cy="145" r="3.5"/><circle cx="60" cy="145" r="3.5"/><circle cx="70" cy="145" r="3.5"/><circle cx="80" cy="145" r="3.5"/><circle cx="90" cy="145" r="3.5"/><circle cx="100" cy="145" r="3.5"/>
+  </g>
+  <!-- Fond clair rosé -->
+  <rect x="10" y="10" width="100" height="100" rx="3" fill="url(#cherrybg)"/>
+  <defs>
+    <linearGradient id="cherrybg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <!-- Branche principale -->
+  <path d="M60 110 Q55 90 45 75 Q35 60 38 45" stroke="#8B4513" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M60 110 Q65 88 72 72 Q80 55 75 40" stroke="#8B4513" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M45 75 Q30 65 22 55" stroke="#A0522D" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M52 82 Q65 75 75 68" stroke="#A0522D" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M38 45 Q25 38 18 30" stroke="#A0522D" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M75 40 Q88 33 95 25" stroke="#A0522D" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Fleurs de cerisier -->
+  <g transform="translate(20,52)">
+    <circle cx="0" cy="-7" r="5" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="6.7" cy="-2.2" r="5" fill="#ffc0cb" opacity="0.85"/>
+    <circle cx="4.1" cy="5.9" r="5" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="-4.1" cy="5.9" r="5" fill="#ff9eb5" opacity="0.85"/>
+    <circle cx="-6.7" cy="-2.2" r="5" fill="#ffc0cb" opacity="0.9"/>
+    <circle cx="0" cy="0" r="3.5" fill="#fff0f5"/>
+    <circle cx="0" cy="0" r="1.5" fill="#ffdd57"/>
+  </g>
+  <g transform="translate(76,65)">
+    <circle cx="0" cy="-7" r="5" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="6.7" cy="-2.2" r="5" fill="#ffc0cb" opacity="0.85"/>
+    <circle cx="4.1" cy="5.9" r="5" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="-4.1" cy="5.9" r="5" fill="#ff9eb5" opacity="0.85"/>
+    <circle cx="-6.7" cy="-2.2" r="5" fill="#ffc0cb" opacity="0.9"/>
+    <circle cx="0" cy="0" r="3.5" fill="#fff0f5"/>
+    <circle cx="0" cy="0" r="1.5" fill="#ffdd57"/>
+  </g>
+  <g transform="translate(38,42)">
+    <circle cx="0" cy="-6" r="4.5" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="5.7" cy="-1.9" r="4.5" fill="#ffb7c5" opacity="0.85"/>
+    <circle cx="3.5" cy="5.1" r="4.5" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="-3.5" cy="5.1" r="4.5" fill="#ffb7c5" opacity="0.85"/>
+    <circle cx="-5.7" cy="-1.9" r="4.5" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="0" cy="0" r="3" fill="#fff0f5"/>
+    <circle cx="0" cy="0" r="1.2" fill="#ffdd57"/>
+  </g>
+  <g transform="translate(75,38)">
+    <circle cx="0" cy="-6" r="4.5" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="5.7" cy="-1.9" r="4.5" fill="#ffb7c5" opacity="0.85"/>
+    <circle cx="3.5" cy="5.1" r="4.5" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="-3.5" cy="5.1" r="4.5" fill="#ffb7c5" opacity="0.85"/>
+    <circle cx="-5.7" cy="-1.9" r="4.5" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="0" cy="0" r="3" fill="#fff0f5"/>
+    <circle cx="0" cy="0" r="1.2" fill="#ffdd57"/>
+  </g>
+  <g transform="translate(18,28)">
+    <circle cx="0" cy="-5" r="4" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="4.8" cy="-1.5" r="4" fill="#ffd0de" opacity="0.85"/>
+    <circle cx="2.9" cy="4.2" r="4" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="-2.9" cy="4.2" r="4" fill="#ffd0de" opacity="0.85"/>
+    <circle cx="-4.8" cy="-1.5" r="4" fill="#ffb7c5" opacity="0.9"/>
+    <circle cx="0" cy="0" r="2.5" fill="#fff0f5"/>
+    <circle cx="0" cy="0" r="1" fill="#ffdd57"/>
+  </g>
+  <g transform="translate(95,23)">
+    <circle cx="0" cy="-5" r="4" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="4.8" cy="-1.5" r="4" fill="#ffb7c5" opacity="0.85"/>
+    <circle cx="2.9" cy="4.2" r="4" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="-2.9" cy="4.2" r="4" fill="#ffb7c5" opacity="0.85"/>
+    <circle cx="-4.8" cy="-1.5" r="4" fill="#ffd0de" opacity="0.9"/>
+    <circle cx="0" cy="0" r="2.5" fill="#fff0f5"/>
+    <circle cx="0" cy="0" r="1" fill="#ffdd57"/>
+  </g>
+  <!-- Pétales tombants -->
+  <ellipse cx="50" cy="95" rx="3" ry="5" fill="#ffb7c5" opacity="0.6" transform="rotate(-20,50,95)"/>
+  <ellipse cx="70" cy="100" rx="2.5" ry="4" fill="#ffd0de" opacity="0.5" transform="rotate(15,70,100)"/>
+  <ellipse cx="30" cy="90" rx="2" ry="4" fill="#ffb7c5" opacity="0.55" transform="rotate(-10,30,90)"/>
+  <!-- Label -->
+  <rect x="10" y="118" width="100" height="24" rx="3" fill="#c2185b" opacity="0.9"/>
+  <text x="60" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="1">SAKURA</text>
+</svg>
